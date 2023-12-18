@@ -3,7 +3,7 @@ site_description: Test
 
 nav:
   - Introduction: index.md
-  - ReadMe: ReadMe:md
+  - ReadMe: ReadMe.md
 
 plugins:
   - techdocs-core
