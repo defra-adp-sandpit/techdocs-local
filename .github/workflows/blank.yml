@@ -13,6 +13,16 @@ jobs:
     steps:
     - run: |
         echo PR #${{ github.event.number }} has been merged
+    - name: Create tag
+      uses: actions/github-script@v5
+      with:
+        script: |
+          github.rest.git.createRef({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            ref: 'refs/tags/1.1.6',
+            sha: context.sha
+          })
 
   close_job:
     # this job will only run if the PR has been closed without being merged
