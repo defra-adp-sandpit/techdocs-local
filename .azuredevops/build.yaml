@@ -42,3 +42,8 @@ extends:
   template: /pipelines/common-app-build.yaml@DEFRA-ADPPipelineCommon
   parameters:
     serviceName: "techdocs-local"
+    appBuildConfig:
+      appFrameworkType: "nodejs"  
+      projectPath: "./package.json"
+      manifestPath: "./package.json"
+      imageRepoName: "techdocs-local"
