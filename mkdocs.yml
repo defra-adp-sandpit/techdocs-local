@@ -1,9 +1,5 @@
 site_name: Test
 site_description: Test
-
-nav:
-  - Introduction: index.md
-  - ReadMe: ReadMe:md
-
+docs_dir: docs
 plugins:
   - techdocs-core
